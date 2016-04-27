@@ -45,29 +45,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         // Get the TextView which will be populated with the Dictionary ContentProvider data.
-<<<<<<< HEAD
-        ListView dictListView = (ListView) findViewById(R.id.dictionary_list_view);
-
-        // Get the ContentResolver which will send a message to the ContentProvider.
-        ContentResolver resolver = getContentResolver();
-
-        // Get a Cursor containing all of the rows in the Words table.
-        Cursor cursor = resolver.query(UserDictionary.Words.CONTENT_URI, null, null, null, null);
-
-        // Set the Adapter to fill the standard two_line_list_item layout with data from the Cursor.
-        SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
-                android.R.layout.two_line_list_item,
-                cursor,
-                COLUMNS_TO_BE_BOUND,
-                LAYOUT_ITEMS_TO_FILL,
-                0);
-
-        // Attach the adapter to the ListView.
-        dictListView.setAdapter(adapter);
-    }
-=======
         TextView dictTextView = (TextView) findViewById(R.id.dictionary_text_view);
         // Get the ContentResolver which will send a message to the ContentProvider
         ContentResolver resolver = getContentResolver();
@@ -91,5 +69,4 @@ public class MainActivity extends ActionBarActivity {
             cursor.close();
         }
  }
->>>>>>> Setting_up_DictionaryProviderExample
 }
