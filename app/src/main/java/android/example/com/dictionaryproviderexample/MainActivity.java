@@ -47,6 +47,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         // Get the TextView which will be populated with the Dictionary ContentProvider data.
+<<<<<<< HEAD
         ListView dictListView = (ListView) findViewById(R.id.dictionary_list_view);
 
         // Get the ContentResolver which will send a message to the ContentProvider.
@@ -66,4 +67,29 @@ public class MainActivity extends ActionBarActivity {
         // Attach the adapter to the ListView.
         dictListView.setAdapter(adapter);
     }
+=======
+        TextView dictTextView = (TextView) findViewById(R.id.dictionary_text_view);
+        // Get the ContentResolver which will send a message to the ContentProvider
+        ContentResolver resolver = getContentResolver();
+        Cursor cursor = resolver.query(UserDictionary.Words.CONTENT_URI, null, null, null, null);
+        try{
+            dictTextView.setText("Number of words in the dictionary : "+cursor.getCount());
+            dictTextView.setText("Columns:"+ Words._ID+"-"+Words.FREQUENCY+"-"+Words.WORD);
+            int a=cursor.getColumnIndex(UserDictionary.Words._ID);
+            int b=cursor.getColumnIndex(UserDictionary.Words.FREQUENCY);
+            int c=cursor.getColumnIndex(UserDictionary.Words.WORD);
+            while(cursor.moveToNext())
+                {
+                    int id=cursor.getInt(a);
+                    int freq =cursor.getInt(b);
+                    String word = cursor.getString(c);
+                    dictTextView.append("/n"+id+"-"+freq+"-"+word);
+                }
+            }
+        finally
+        {
+            cursor.close();
+        }
+ }
+>>>>>>> Setting_up_DictionaryProviderExample
 }
