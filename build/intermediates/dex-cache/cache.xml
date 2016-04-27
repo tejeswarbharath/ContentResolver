@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-e0c5b1225aa85c4ae0817f26e44d9fc9805911b7.jar" />
+    </item>
+    <item
+        jar="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\pre-dexed\debug\classes-17ff0a11b4d2e8c9008242e255482d5d82b10cd9.jar" />
+    </item>
+    <item
+        jar="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\pre-dexed\debug\classes-8d1b0a8ce36a617bc277def912bd07f6f980ac8a.jar" />
+    </item>
+    <item
+        jar="C:\Users\tejeswar\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\tejeswar\Desktop\ContentProviderEx\DictionaryProviderExample\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-af0158232f13beac338b5e3d0e2d7fbbcb5ab924.jar" />
+    </item>
+
+</items>
