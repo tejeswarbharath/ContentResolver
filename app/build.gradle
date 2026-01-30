@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "20.0.0"
+    namespace "android.example.com.dictionaryproviderexample"
+    compileSdkVersion 33
+    buildToolsVersion "33.0.0"
 
     defaultConfig {
         applicationId "android.example.com.dictionaryproviderexample"
@@ -17,9 +18,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
